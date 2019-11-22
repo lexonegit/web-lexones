@@ -1,7 +1,4 @@
-# web-lexones
-Simple responsive web portfolio template
+# Personal site
+Simple, responsive and efficient personal site made using HTML/CSS/JS
 
-View in action: https://lexones.com/
-
-
-todo: light/dark theme switch
+Hosted at: https://lexones.com/

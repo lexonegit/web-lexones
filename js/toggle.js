@@ -10,5 +10,5 @@ t.addEventListener("change", () => {
 });
 
 function setTheme() {
-    document.documentElement.setAttribute("theme", t.checked ? "dark" : "light");
+    document.documentElement.setAttribute("theme", t.checked ? "light" : "dark");
 }

@@ -1,0 +1,220 @@
+/* ========================= Combined styles start */
+.section-socials, .section-projects-title, .section-contact-title, .section-contact {
+	text-align: center;
+}
+.section-projects-title, .section-projects, .section-contact-title, .section-contact {
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	border-color: var(--Border);
+	border-style: solid;
+}
+/* ========================= Combined styles end */
+
+/* section-socials */
+.section-socials {
+	padding: 1em 0;
+}
+.section-socials i {
+	color: var(--SocialIcon);
+	background-color: var(--SocialIconBg);
+	
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 50%;
+	font-size: 2.25em;
+	padding: 0.225em;
+	margin: 0.2em;
+}
+.section-socials i:hover {
+	color: var(--SocialIconHover);
+	background-color: var(--SocialIconBgHover);
+	-webkit-transition: .1s;
+	transition: .1s;
+}
+.section-socials .text {
+	margin: 0 0 0.5em 0;
+}
+
+/* section-projects-title */
+.section-projects-title {
+	background-color: var(--Block2);
+	border-width: 1px;
+	padding: 0.8em;
+	border-radius: 0.25em 0.25em 0 0;
+}
+
+/* section-projects */
+.section-projects {
+	background-color: var(--Block1);
+	border-width: 0 1px 1px 1px;
+	padding: 2em;
+	border-radius: 0 0 0.25em 0.25em;
+}
+
+/* section-contact-title */
+.section-contact-title {
+	background-color: var(--Block2);
+	border-width: 1px;
+	padding: 0.8em;
+	margin: 2em 0 0 0;
+	border-radius: 0.25em 0.25em 0 0;
+}
+
+/* section-contact */
+.section-contact {
+	background-color: var(--Block1);
+	border-width: 0 1px 1px 1px;
+	padding: 2em;
+	border-radius: 0 0 0.25em 0.25em;
+}
+
+/* Text elements */
+.text-project-type { color: var(--TextLink); }
+.text-project-tech { font-size: 0.75em; }
+
+/* Project description text content */
+.text-project-desc {
+	text-align: justify;
+}
+.text-project-desc + .text-project-desc {
+	margin: 1em 0 0 0;
+}
+
+.project {
+	flex-direction: row;
+}
+.project + .project {
+	border-width: 1px 0 0 0;
+	border-style: dashed;
+	border-color: var(--Border);
+
+	margin: 2em 0 0 0;
+	padding: 2em 0 0 0;
+}
+
+.project-title {
+	width: 25%;
+}
+.project-title img {
+	display: block;
+	border-radius: 0.25em;
+	max-width: 100%;
+}
+.project-content {
+	margin: 0 0 0 1em;
+	width: 75%;
+}
+.project-description {
+	margin: 0.5em 0 0 0;
+	width: 100%;
+}
+
+/* Other */
+.project-button {
+	display: block;
+	text-decoration: none;
+
+	text-align: center;
+	font-weight: bold;
+	
+	color: #141414;
+	
+	background: linear-gradient(to bottom, #e6e6e6 25%, #cecece 100%);
+	background-color: #ffffff;
+	
+	box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+	border: 1px solid #8a8a8a;
+	border-radius: 0.25em;
+
+	margin: 1em 0 0.25em 0;
+	padding: 0.5em;
+}
+.project-button:hover {
+	background: linear-gradient(to bottom, #f0f0f0 25%, #d8d8d8 100%);
+	border-color: #1b1b1b;
+}
+.contact-logo {
+	font-size: 1.5em;
+}
+.section-contact-links {
+	flex-direction: row;
+	margin: auto;
+	padding: 1em 0.5em 0.5em 0.5em;
+}
+.contact-link {
+	display: inline;
+	margin: auto;
+	max-width: 300px;
+	text-align: left;
+}
+.contact-link + .contact-link {
+	padding: 0 0.75em;
+}
+.contact-link i {
+	padding: 0 0.5em 0 0;
+	color: var(--SocialIcon2);
+	border-radius: 50%;
+	font-size: 1.5em;
+}
+.contact-link p {
+	display: inline;
+}
+
+/* Media queries */
+
+/* Mobile/tablet width */
+@media only screen and (max-width: 900px) {
+	.section-projects-title {
+		border-width: 1px 0;
+		border-radius: 0;
+		padding: 1em;
+	}
+	
+	.section-projects {
+		border: none;
+		padding: 1em;
+	}
+
+	.project-content {
+		width: 65%;
+	}
+
+	.project-title {
+		width: 35%;
+	}	
+}
+
+/* Mobile width */
+@media only screen and (max-width: 440px) {
+	.section-projects {
+		padding: 1em 0.5em;
+	}
+
+	.project-content {
+		margin: 0.5em 0 0 0;
+		width: 100%;
+	}
+
+	.project-title {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		width: 100%;
+	}
+
+	.project + .project {
+		margin: 2em 0 0 0;
+	}
+	
+	.project-title a {
+		max-width: 50%;
+	}
+
+	.project-description {
+		margin: 0 0 0 0.5em;
+	}
+
+	.project {
+		flex-wrap: wrap;
+	}
+}

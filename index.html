@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Google Analytics -->
+<!-- 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122751771-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-122751771-2');
+		</script> -->
+
 		<title>Lexones</title>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="icon" href="media/icon/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/frontpage.css">
+		<link rel="icon" href="favicon.ico">
 	</head>
 	<body>
 		<div class="navbar">
@@ -20,14 +31,15 @@
 		</div>
 		<div class="container">
 			<div class="section-socials">
-				<h1>LEEVI SEPPÄLÄ</h1>
-				<a href="https://github.com/lexonegit"><i class="fab fa-github"></i></a>
-				<a href="https://lexone.itch.io/"><i class="fab fa-itch-io"></i></a>
-				<a href="https://twitter.com/lexonetw"><i class="fab fa-twitter"></i></a>
+				<h1>Hi, I'm Leevi</h1>
+				<p class="text">Student • Developer • Designer</p>
+				<a href="https://github.com/lexonegit"><i class="fab fa-github" title="Github"></i></a>
+				<a href="https://lexone.itch.io/"><i class="fab fa-itch-io" title="Itch.io"></i></a>
+				<a href="https://twitter.com/lexonetw"><i class="fab fa-twitter" title="Twitter"></i></a>
 			</div>
 			<div class="section-projects-title">
 				<h2>PROJECTS</h2>
-				<p class="text">Projects that I've made and released</p>
+				<p class="text">Projects made by me</p>
 			</div>
 			<div class="section-projects">
 				<div class="project flex">
@@ -38,24 +50,33 @@
 						<div class="project-description">
 							<h3>Intro Fighters</h3>
 							<p class="text text-project-type">Game project</p>
-							<p class="text text-project-tech">Made using Unity</p>
+							<p class="text text-project-tech">Made using Unity, C#</p>
 						</div>
 					</div>
 	
 					<div class="project-content">
 						<p class="text text-project-desc">
-							Intro Fighters is a <a href="https://www.twitch.tv/">Twitch.tv</a> integrated overlay game. It uses the
-							<a href="https://dev.twitch.tv/docs/irc/">Twitch IRC interface</a> to allow viewers join as "on-screen" game characters 
-							via chat messages on whatever channel the game is being utilized on.
+							Intro Fighters is a <a href="https://www.twitch.tv/">Twitch.tv</a> integrated overlay game made with <a href="https://unity.com/">Unity.</a>
 						</p>
 						<p class="text text-project-desc">
-							The game is designed to work alongside the popular OBS streaming software and it's mainly targeted towards
-							streamers, although you can still try it out even if you are not a streamer yourself.
+							In the game, viewers can take part in a fighting minigame that is shown on the broadcast as an overlay.
+							Joining is done by typing in the stream's chat room. When a viewer joins, their game character will appear on stream for everyone to see. The characters are controlled automatically, so the viewers only need to watch and see the outcome.
+						</p>
+						<p class="text text-project-desc">
+							Intro Fighters is most commonly used during quiet times while streaming, such as <i>intro</i> screens, breaks, etc. Basically it's meant to entertain when nothing else is happening.
+						</p>
+						<p class="text text-project-desc">
+							The <a href="https://dev.twitch.tv/docs/irc/">Twitch IRC client</a> component of the game is also written by me from scratch. It is open-source, available on my <a href="https://github.com/lexonegit/Unity-Twitch-Chat">GitHub.</a>
+						</p>
+						<p class="text text-project-desc">
+							The game is designed to work alongside the popular streaming software, <a href="https://obsproject.com/">OBS.</a>
+						</p>
+						<p class="text text-project-desc">
+							Because the game's main focus is stream integration, the target audience is mainly streamers. Although you can still try it out even if you are not a streamer yourself.
 						</p>
 						<p class="text text-project-desc">
 							Visit the main page to learn more and watch the video trailer.
 						</p>
-	
 						<a class="project-button" href="https://lexone.itch.io/introfighters">Learn more</a>
 					</div>
 				</div>
@@ -67,31 +88,52 @@
 						<div class="project-description">
 							<h3>BotConversation</h3>
 							<p class="text text-project-type">IOT Project</p>
-							<p class="text text-project-tech">Made using Arduino and Unity</p>
+							<p class="text text-project-tech">Made using Arduino, Unity, C#</p>
 						</div>
 					</div>
 	
 					<div class="project-content">
 						<p class="text text-project-desc">
-							BotConversation was a project about two AI bots having an endless conversation.
+							BotConversation was a livestreaming project about two AI bots talking to each other.
 							It was livestreamed for a few days on <a href="https://www.twitch.tv/botconversation">Twitch.tv</a> late 2018.
 						</p>
 						<p class="text text-project-desc">
-							The conversation intelligence was powered by <a href="https://www.cleverbot.com/api/">Cleverbot API</a> and text to speech
-							was done with <a href="https://cloud.google.com/text-to-speech/">Google Cloud Text-to-Speech API</a>
+							The conversation intelligence was powered by <a href="https://www.cleverbot.com/api/">Cleverbot API</a> and the voices
+							were generated using <a href="https://cloud.google.com/text-to-speech/">Google Cloud Text-to-Speech API</a>
 						</p>
 						<p class="text text-project-desc">
-							The physical robot faces were controlled by an <a href="https://www.arduino.cc/">Arduino</a> and the interface shown
-							on stream was made with <a href="https://unity.com/">Unity</a>
+							I used two 8x8 LED matrices for the bot face animations. They were both controlled by a single <a href="https://www.arduino.cc/">Arduino board.</a>
+							All the conversation logic, API calls and additional UI was made with <a href="https://unity.com/">Unity</a> and C#
 						</p>
 						<p class="text text-project-desc">
-							Viewers could also influence the conversation by voting on trending topics for the bots to talk about every 10 minutes or so.
+							The project also included an automatic voting system where viewers could vote on trending topics for the bots to talk about. Voting was done via the stream chat.
 						</p>
 						<p class="text text-project-desc">
-							The project is no longer active but you can still view past highlights that viewers of the stream have made.
+							The project is no longer active but you can still view past highlights that viewers of the stream have saved.
 						</p>
-	
 						<a class="project-button" href="https://www.twitch.tv/botconversation/clips?filter=clips&range=all">View highlights</a>
+					</div>
+				</div>
+			</div>
+			<div class="section-contact-title">
+				<h2>CONTACT</h2>
+			</div>
+			<div class="section-contact">
+				<p class="text">Have a new work opportunity available? Or just want to talk? Feel free to contact me!</p>
+				<div class="section-contact-links">
+					<div class="contact-link">
+						<a class="text" href="mailto:leevi.contact@gmail.com">
+							<i class="fas fa-envelope contact-logo" title="Email"></i>leevi.contact@gmail.com
+						</a>
+					</div>
+					<div class="contact-link">
+						<a class="text" href="https://twitter.com/lexonetw">
+							<i class="fab fa-twitter contact-logo" title="Twitter"></i>@lexonetw
+						</a>
+					</div>
+					<div class="contact-link">
+						<i class="fab fa-discord contact-logo" title="Discord"></i>
+						<p class="text">Lexone#3407</p>
 					</div>
 				</div>
 			</div>

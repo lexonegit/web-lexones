@@ -1,0 +1,23 @@
+{
+  "name": "web-lexones",
+  "version": "1.0.0",
+  "description": "Simple, responsive and fast \"portfolio\" site made using HTML/CSS/JS",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel --open",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexonegit/web-lexones.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lexonegit/web-lexones/issues"
+  },
+  "homepage": "https://github.com/lexonegit/web-lexones#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}

@@ -1,0 +1,165 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.flex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+/* Theme: Dark */
+:root {
+	--Text1: #f3f3f3;
+	--Text2: #000000;
+	--TextLink: #a1a3ff;
+
+	--SocialIcon: #696969;
+
+	--Border: #4b4b4b;
+	--Color1: #2b2b2b;
+	--Color2: #363636;
+	--Tech: #d1d1d1;
+
+	--Body: #0e0e0e;
+	--BodyGradient: linear-gradient(0deg, rgba(14, 14, 14, 1) 0%, rgba(27, 27, 27, 1) 80%, rgba(27, 27, 27, 1) 100%);
+}
+
+/* Theme: Light */
+:root[theme="light"] {
+	--Text1: #383838;
+	--Text2: #ebebeb;
+	--TextLink: #4255ff;
+
+	--SocialIcon: #818181;
+
+	--Border: #b8b8b8;
+
+	--Color1: #f5f5f5;
+	--Color2: #e6e6e6;
+	--Tech: #5c5c5c;
+
+	--Body: rgb(255, 255, 255);
+	--BodyGradient: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(241, 241, 241) 80%, rgb(241, 241, 241) 100%);
+}
+
+/* Navbar */
+.navbar {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	border-color: var(--Border);
+	border-style: solid;
+	background-color: var(--Color2);
+	border-width: 0 0 1px 0;
+}
+
+.navbar-inner {
+	justify-content: flex-end;
+	padding: 0.25em 0;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+	cursor: pointer;
+	padding: 0.25em 1em;
+	border-radius: 20px;
+
+	border-color: var(--Border);
+	border-width: 2px;
+	border-style: solid;
+
+	background-color: var(--SocialIconBg);
+}
+
+.theme-toggle:hover {
+	background-color: var(--SocialIconBgHover);
+	-webkit-transition: 0.1s;
+	transition: 0.1s;
+}
+
+#theme-input {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	-webkit-transition: 0.1s;
+	transition: 0.1s;
+
+	background-color: var(--SocialIcon);
+	border-radius: 10px;
+	width: 25px;
+	height: 18px;
+	left: -10px;
+}
+
+#theme-input:checked+.slider {
+	left: 10px;
+}
+
+/* Body */
+body {
+	/* background-color: var(--Body); */
+	background: var(--BodyGradient);
+	background-color: var(--Body);
+	background-repeat: no-repeat;
+
+	color: var(--Text1);
+	font-family: "Segoe UI", sans-serif;
+	padding: 0;
+	margin: 0 0 6em 0;
+}
+
+/* Text elements */
+h1,
+h2,
+h3,
+.text {
+	margin: 0;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.text {
+	font-size: 1.05em;
+	font-weight: 600;
+}
+
+/* Responsive container */
+.container {
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+/* Media queries */
+
+/* Mobile/tablet width */
+@media only screen and (max-width: 900px) {
+	.navbar-inner {
+		padding: 0.25em;
+	}
+}

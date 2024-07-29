@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/lexonegit/web-lexones#readme",
   "devDependencies": {
-    "parcel": "^2.8.2"
+    "parcel": "^2.12.0"
   }
 }

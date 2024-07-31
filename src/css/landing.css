@@ -11,12 +11,8 @@
   border-style: solid;
 }
 
-.block:first-of-type {
-  margin-top: 1em;
-}
-
 .block {
-  margin-top: 2em;
+  margin-top: 0.5em;
 }
 
 /* Social icons */
@@ -56,10 +52,14 @@
   transition: 0.12s;
 }
 
+.intro {
+  padding: 1em;
+}
+
 .header {
   background-color: var(--C2);
   border-width: 1px;
-  padding: 0.8em;
+  padding: 1em;
   border-radius: 0.25em 0.25em 0 0;
 }
 
@@ -150,7 +150,7 @@
   font-weight: 500;
   border-radius: 0.5em;
   font-size: 0.8em;
-  padding: 0.25em 0.6em;
+  padding: 0.2em 0.6em;
   margin: 0 0.5em 0.5em 0;
 
   line-height: 20px;

@@ -5,7 +5,8 @@
   "source": "src/index.html",
   "scripts": {
     "dev": "parcel --open",
-    "build": "parcel build --public-url ./"
+    "build": "parcel build --no-source-maps --dist-dir build --public-url ./",
+		"build:dev": "parcel build --public-url ./"
   },
   "repository": {
     "type": "git",
